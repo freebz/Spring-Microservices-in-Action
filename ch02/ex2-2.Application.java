@@ -1,0 +1,14 @@
+// 코드 2-2 @SpringBootApoplication 애너테이션
+
+package com.thoughtmechanix.licenses;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Application {
+
+    public static void main(String[] args) {
+	SpringApplication.run(Application.class, args);
+    }
+}
