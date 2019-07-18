@@ -1,0 +1,13 @@
+# 코드 4-2 application.yml 파일의 유레카 구성 설정
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 5
+  serviceUrl:
+    defaultZone: http://localhost:8761

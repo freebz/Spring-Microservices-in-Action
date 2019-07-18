@@ -1,0 +1,28 @@
+<!-- 코드 4-1 pom.xml 파일에 의존성 추가 -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns="http://maven.apache.org/POM/4.0.0"
+	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+			     http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.thoughtmechanix</groupId>
+  <artifactId>eurekasvr</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>Eureka Server</name>
+  <description>Eureka Server demo project</description>
+
+  <!-- Spring Cloud Parent를 사용하는 메이븐 정의는 표시하지 않음. -->
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflex-eureka-server</artifactId>
+    </dependency>
+  </dependencies>
+
+// 간결한 코드를 위해 pom.xml 파일의 나머지 삭제
+...
+</project>

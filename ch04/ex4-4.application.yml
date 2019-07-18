@@ -1,0 +1,18 @@
+# 코드 4-4 유레카를 설정하기 위해 조직 서비스의 application.yml 파일 수정
+
+spring:
+  application:
+    name: organizationservice
+  profiles:
+    active: default
+  cloud:
+    config:
+      enabled: true
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceURl:
+      defaultZone: http://localhost:8761/eureka/
