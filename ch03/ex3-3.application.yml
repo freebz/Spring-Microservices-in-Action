@@ -1,0 +1,14 @@
+# 코드 3-3 스프링 클라우드 컨피그의 application.yml 파일
+
+server:
+  port: 8888
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file://Users/johncarnell1/book/
+          spmia_code/chapter3-code/confsvr/src/main/
+          resources/config/licensingservice

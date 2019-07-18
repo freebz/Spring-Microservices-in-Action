@@ -1,0 +1,14 @@
+# 코드 3-10 스프링 클라우드 컨피그용 application.yml 파일
+
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        encrypt.enabled: false
+        git:
+          uri: https://github.com/klimtever/config-repo/
+          searchPaths: licensingservice, organizationservice
+          username: native-cloud-apps
+          password: 0ffended
