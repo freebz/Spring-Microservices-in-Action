@@ -1,0 +1,7 @@
+# 코드 6-4 정적 경로로 라이선싱 서비스 매핑
+
+zuul:
+  routes:
+    licensestatic:
+      path: /licensestatic/**
+      url:  http://licenseservice-static:8081

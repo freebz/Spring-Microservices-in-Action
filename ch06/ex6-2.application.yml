@@ -1,0 +1,10 @@
+# 코드 6-2 유레카와 통신하는 주울 서버 구성
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceURl:
+      defaultZone: http://localhost:8761/eureka

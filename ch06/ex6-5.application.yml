@@ -1,0 +1,14 @@
+# 코드 6-5 라이선싱 서비스를 여러 경로에 정적으로 매핑
+
+zuul:
+  routes:
+    licensestatic:
+      path: /licensestatic/**
+      serviceId: licensestatic
+ribbon:
+  eureka:
+    enabled: false
+licensestatic:
+  ribbon:
+    listOfServers: http://licenseservice-static1:8081,
+      http://licenseservice-static2:8082

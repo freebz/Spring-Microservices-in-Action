@@ -1,0 +1,8 @@
+# 코드 6-3 접두어를 사용해 사용자 정의 경로 설정
+
+zuul:
+  ignored-services: '*'
+  prefix: /api
+  routes:
+    organizationservice: /organization/**
+    licensingservice: /licensing/**
