@@ -1,0 +1,23 @@
+<!-- 코드 A-1 도커 이미지를 생성하는 데 사용되는 스포티파이 도커 메이븐 플러그인 -->
+
+<plugin>
+  <groupId>com.spotify</groupId>
+  <artifactId>docker-maven-plugin</artifactId>
+  <version>0.4.10</version>
+  <configuration>
+    <imageName>
+      ${docker.image.name}:
+      [ca]${docker.image.tag}
+    </imageName>
+    <dockerDirectory>
+      ${basedir}/target/dockerfile
+    </dockerDirectory>
+    <resources>
+      <resource>
+	<targetPath>/</targetPath>
+	<directory>${project.build.directory}</directory>
+	<include>${project.build.finalName}.jar</include>
+      </resource>
+    </resources>
+  </configuration>
+</plugin>
