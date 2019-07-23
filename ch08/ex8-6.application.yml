@@ -1,0 +1,16 @@
+# 코드 8-6 카프카의 메시지 토픽에 라이선싱 서비스 매핑
+
+spring:
+  application:
+    name: licensingservice
+    ... // 간결한 코드를 위해 삭제
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: orgChangeTopic
+          content-type: application/json
+          group: licensingGroup
+        binder:
+          zkNodes: localhost
+          brokers: localhost

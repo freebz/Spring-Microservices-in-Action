@@ -1,0 +1,12 @@
+# 코드 8-13 사용자 정의 input 채널을 사용하도록 라이선싱 서비스 수정
+
+spring:
+...
+cloud:
+...
+  stream:
+    bindings:
+      inboundOrgChanges:
+        destination: orgChangeTopic
+        content-type: application/json
+        group: licensingGroup

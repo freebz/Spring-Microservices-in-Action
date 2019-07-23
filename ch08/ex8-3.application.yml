@@ -1,0 +1,17 @@
+# 코드 8-3 메시지를 발행하기 위한 스프링 클라우드 스트림의 구성
+
+spring:
+  application:
+    name: organizationservice
+
+    // 간결한 코드를 위해 삭제
+
+    stream:
+      bindings:
+        output:
+          destination: orgChangeTopic
+          content-type: application/json
+        kafka:
+          binder:
+            zkNodes: localhost
+            brokers: localhost
