@@ -1,0 +1,25 @@
+# 코드 10-2 빌드를 위한 핵심 런타임 구성
+
+langeage: java
+jdk:
+  - oraclejdk8
+cache:
+  directories:
+    - "$HOME/.m2"
+sudo: required
+services:
+  - docker
+notifications:
+  email:
+    - carnell28@gmail.com
+  on_success: always
+  on_failure: always
+branches:
+  only:
+    - master
+env:
+  global:
+-secure
+IMo6+b8kxTXhavolsJQDwWPm5rKZfadUJu6U0sG/prFWi+wzMXln5XpASiiHomzDKQ3XYp6jrn8nU66R/
+H2Usv2Q9U/ikLevT
+  # 간뎔한 코드를 위해 삭제
