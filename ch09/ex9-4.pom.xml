@@ -1,0 +1,10 @@
+<!-- 코드 9-4 집킨 서버에 필요한 JAR 의존성 -->
+
+<dependency>
+  <groupId>io.zipkin.java</groupId>
+  <artifactId>zipkin-server</artifactId>
+</dependency>
+<dependency>
+  <groupId>io.zipkin.java</groupId>
+  <artifactId>zipkin-autoconfigure-ui</artifactId>
+</dependency>

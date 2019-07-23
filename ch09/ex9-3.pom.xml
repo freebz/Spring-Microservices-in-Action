@@ -1,0 +1,10 @@
+<!-- 코드 9-3 클라이언트 측 스프링 클라우드 슬루스와 집킨 의존성 -->
+
+<dependency>
+  <groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-starter-sleuth</artifactId>
+</dependency>
+<dependency>
+  <groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+</dependency>

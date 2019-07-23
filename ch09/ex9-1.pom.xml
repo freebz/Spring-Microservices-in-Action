@@ -1,0 +1,6 @@
+<!-- 코드 9-1 주울에 스프링 클라우드 슬루스 추가 -->
+
+<dependency>
+  <groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-starter-sleuth</artifactId>
+</dependency>
